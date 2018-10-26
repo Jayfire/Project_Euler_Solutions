@@ -1,8 +1,16 @@
+FIBLIST = [None]*4000000
+
 def fib(x):
-    if x == 0 or x == 1:
-        return 1
-    return fib(x-1) + fib(x-2)
-total = 0
-for x in range(3,4000000,3):  
-    total += fib(x)
-print(temp)
+    if FIBLIST[x]:
+        return FIBLIST[x]
+
+    FIBLIST[x] = fib(x-1) + fib(x-2)
+    return FIBLIST[x]
+
+if __name__ == "__main__":
+    total = 0
+    FIBLIST[0], FIBLIST[1] = 1, 1
+    for x in range(2,4000000,2):
+        total += fib(x)
+
+    print(total)

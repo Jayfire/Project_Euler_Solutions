@@ -10,6 +10,6 @@ def prime_factors(n):
 
     return factors
 
-
-pfs = prime_factors(600851475143)
-print(max(pfs))
+if __name__ == "__main__":
+    pfs = prime_factors(600851475143)
+    print(max(pfs))
