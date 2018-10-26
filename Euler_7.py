@@ -5,7 +5,7 @@ if __name__ == "__main__":
     n = 10001
     power = 2**n
     pop = 10**power
-    popn = pop/n
+    popn = pop / n
     one = math.floor(pop * A)
     two = (popn * A)
     three = math.floor(popn * A)
