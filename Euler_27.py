@@ -1,6 +1,6 @@
 import math
 
-PRIMES = [None]*100000
+PRIMES = [None]*13000
 
 def isprime(n):
     if n <= 0: return False
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     coef = [0,0]
 
     for a in range(-999,1000):
-        for b in range(-999,1001):
+        for b in range(-1000,1001):
             currlen = primelen(a,b)
             if currlen > primeamount:
                 coef[0], coef[1] = a, b
